@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/3a12f01569.js" crossorigin="anonymous"></script>
+    
+
+    <title>Kayi_Plataform</title>
+    
+  
+</head>
+<header class="box" >
+    
+      <img src="/img/logokaty.jpeg" width="150px" height="50px">
+      <i class="fa-solid fa-user"></i>
+      <i class="bi bi-person-fill">Rosalia Archundia Hernández</i>  
+
+    
+</header>
+
+<body>
+    <h2 class="text-title">Gestor de Clientes</h2>
+    <main class="container">
+        <form class="formulario" id="form">
+            <div class="col-auto">
+               
+            <div class="col-auto">
+                <label for="nombre" class="visually-hidden">Nombre</label>
+                <input type="text" class="form-ing" id="nombre" placeholder="Nombre">
+            </div>
+
+               <label for="empresa" class="visually-hidden">Empresa</label>
+               <input type="text" class="form-ing" id="empresa" placeholder="Empresa">
+            </div>
+            <div class="col-auto">
+                <label for="email" class="visually-hidden">Email</label>
+                <input type="tel" class="form-ing" id="email" marcador de posición =" Correo "
+                patrón =" .+@gmail.com, @hotmail.com, @yahoo.com " placeholder="Email">
+            </div>
+            <div class="col-auto">
+                <label for="tetx" class="visually-hidden">Direccion</label>
+                <input type="tel" class="form-ing" id="direccion"  placeholder="Direccion">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Guardar</button>
+            </div>
+        </form>
+
+        <section>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCliente">
+                    <th colspan="5">
+                        <h1 class="mensaje">Sin registros</h1>
+                    </th>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactoModalLabel">Datos del Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="ventanaCliente"> </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+     
+     <div>
+         <footer class="footer">
+           <p class="text-decoration"> © 2022 Global Channel Network. Todos los derechos Reservados.</p>
+           <p class="text-color">Condiciones, Terminos de Uso & Politica de Privacidad.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+
+</body>
+
+</html>
