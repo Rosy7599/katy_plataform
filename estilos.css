@@ -16,11 +16,11 @@
     margin: 10px;
 }
 
-.form-ing{
+.form-control{
+    width: 500px;
     padding: 10px;
-    width: 400px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .mensaje{
