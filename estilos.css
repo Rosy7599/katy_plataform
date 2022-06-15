@@ -31,7 +31,7 @@
     background-color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 7fr 7fr 9fr;
-    bottom: 0px;
+    /* bottom: 0px; */
     padding-left: 1px;
     position: absolute;
     text-align: right;
