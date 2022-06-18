@@ -15,7 +15,7 @@ function crear() {
       email,
       direccion
   }
-      if  ($(empresa && nombre && email && direccion).text() == "") {
+      if  ((empresa && nombre && email && direccion) == "") {
       alert('Tos los campos son requeridos');
       return false;
   }
