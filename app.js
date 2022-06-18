@@ -116,10 +116,10 @@ function actualizar(indice) {
   if (newempresa && newnombre && newemail && newdireccion) {
       let clientes = JSON.parse(localStorage.getItem("clientes"));
           clientes[indice] = {
-          newempresa,
-          newnombre,
-          newemail,
-          newdireccion,
+          empresa: newempresa,
+          nombre: newnombre,
+          email: newemail,
+          direccion: newdireccion,
       }
       localStorage.setItem("clientes", JSON.stringify(clientes));
       vistaPrincipal()
@@ -130,12 +130,18 @@ function actualizar(indice) {
 //delete
 
 const  eliminarCliente  =  ( indice )  =>  {
+  
    if  ( confirm ( '¿Desea eliminar el elemento?' ) )  {
-    clientes.splice(indice, 1);
-      leer ( ) ;
-      alerta ( 'Se eliminó correctamente.' )
+    let clientes = JSON.parse(localStorage.getItem("clientes"));
+     clientes.splice(indice, 1);
+    localStorage.setItem("clientes", JSON.stringify(clientes));
+      alert ( 'Se eliminó correctamente.' )
+     
+            
   }
+  leer();
 } ;
+
        
   
     function vistaPrincipal(){
